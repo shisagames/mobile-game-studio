@@ -43,12 +43,12 @@ mobile-game-studio/
 
 ## Installation
 
-The repository is private. The installing machine must be signed in with a GitHub account that has access (`gh auth login`). Get the repository address from the ShisaGames team and write it in `<owner>/mobile-game-studio` form.
+The repository is private. The installing machine must be signed in with a GitHub account that has access (`gh auth login`). The repository address is `shisagames/mobile-game-studio`.
 
 **As a plugin (recommended):** in Claude Code:
 
 ```
-/plugin marketplace add <owner>/mobile-game-studio
+/plugin marketplace add shisagames/mobile-game-studio
 /plugin install mobile-game-studio@shisagames
 ```
 
