@@ -2,8 +2,8 @@
 
 **A Claude Code plugin by ShisaGames.** It guides a Unity mobile game (iOS and Android) from **the idea to the store and live ops**. It packs the process from *Lemonade Rush: Bottle Sort*, which ShisaGames took from an empty project to the App Store and Google Play in 22 days, into a form any project can reuse.
 
-> **Status:** v1.0.0, private (November 2026). The guide and notes are in Turkish, the plugin and skill descriptions are in English.
-> **Licence:** ShisaGames Proprietary. Internal use only; see [LICENSE](LICENSE).
+> **Status:** v1.0.0, public (November 2026). The guide and notes are in Turkish, the plugin and skill descriptions are in English.
+> **Licence:** ShisaGames Free Use License. Free to use, including for commercial games; no resale or redistribution. See [LICENSE](LICENSE).
 
 ## What it does
 
@@ -37,13 +37,13 @@ mobile-game-studio/
 │           ├── economy-template.md  # Lemonade Rush's real economy and mechanics values
 │           ├── asset-pipeline.md    # Art direction, code drawing pipeline, plugins and libraries
 │           └── competitor-analysis.md  # Magic Sort, Block Out, Gossip Harbor, Smash Fest + idea checklist
-├── LICENSE                          # ShisaGames Proprietary License
+├── LICENSE                          # ShisaGames Free Use License
 └── README.md
 ```
 
 ## Installation
 
-The repository is private. The installing machine must be signed in with a GitHub account that has access (`gh auth login`). The repository address is `shisagames/mobile-game-studio`.
+The repository is public; no GitHub account or access is needed. The repository address is `shisagames/mobile-game-studio`.
 
 **As a plugin (recommended):** in Claude Code:
 
@@ -100,6 +100,13 @@ When a new project teaches a general lesson:
 
 ## Licence
 
-© 2026 ShisaGames. All rights reserved. This plugin is licensed under the **ShisaGames Proprietary License**: it is for ShisaGames' and its authorized people's own game development work only. Copying, distributing or sharing it with third parties requires written permission. Full text: [LICENSE](LICENSE).
+© 2026 ShisaGames. Licensed under the **ShisaGames Free Use License**:
+
+- ✅ Install and use it for free, including on commercial games.
+- ✅ Change it for your own projects.
+- ✅ What you make with it (games, documents, code) is yours.
+- ❌ Selling it, republishing or redistributing it as your own plugin, skill, template or course needs written permission. Sharing a link to this repo is always fine.
+
+Full text: [LICENSE](LICENSE).
 
 The analysis in `competitor-analysis.md` relies on public store pages and industry reports. Names, trademarks and figures belong to their owners and are for reference only.

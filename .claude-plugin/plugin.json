@@ -7,6 +7,16 @@
     "name": "ShisaGames"
   },
   "homepage": "https://shisagames.online",
-  "license": "LicenseRef-ShisaGames-Proprietary",
-  "keywords": ["unity", "mobile-games", "game-design", "monetization", "aso", "ios", "android", "live-ops"]
+  "license": "LicenseRef-ShisaGames-Free-Use",
+  "keywords": [
+    "unity",
+    "mobile-games",
+    "game-design",
+    "monetization",
+    "aso",
+    "ios",
+    "android",
+    "live-ops"
+  ],
+  "repository": "https://github.com/shisagames/mobile-game-studio"
 }

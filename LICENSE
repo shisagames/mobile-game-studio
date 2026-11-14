@@ -1,28 +1,37 @@
-ShisaGames Proprietary License
+ShisaGames Free Use License
 
 Copyright (c) 2026 ShisaGames. All rights reserved.
 
-This repository, including the Mobile Game Studio plugin, its skill files, guides,
-templates and reference documents (the "Software"), is the confidential property of
-ShisaGames.
+This license covers the Mobile Game Studio plugin in this repository, including its
+skill files, guides, templates and reference documents (the "Software").
 
-1. Permitted use. ShisaGames and the people it authorizes in writing may install and
-   use the Software for ShisaGames' own game development work.
+1. Free use. Anyone may install and use the Software, free of charge, for their own
+   projects, including commercial games and other commercial work.
 
-2. Restrictions. Without prior written permission from ShisaGames, you may not copy,
-   publish, distribute, sublicense, sell, or make the Software available to any third
-   party, in whole or in part, or use it to build a competing product or service.
+2. Changes for your own use. You may modify the Software and keep modified copies for
+   your own projects.
 
-3. Third-party content. Product names, trademarks, figures and analyses of third-party
+3. No resale or redistribution. You may not sell, sublicense, rent or otherwise charge
+   for the Software, and you may not republish or redistribute it, in original or
+   modified form, as a standalone product, plugin, skill, template or course, without
+   prior written permission from ShisaGames. Sharing a link to the official repository
+   is always allowed.
+
+4. Attribution. Keep this license and the copyright notice in any copy you keep, and do
+   not present the Software as your own work.
+
+5. Your outputs are yours. Games, documents, code and other work you create with the
+   help of the Software belong to you. This license places no restriction on them.
+
+6. Third-party content. Product names, trademarks, figures and analyses of third-party
    games in references/competitor-analysis.md belong to their respective owners. They
-   are included for internal reference and research only, and no rights in them are
-   granted by this license.
+   are included for reference and research only, and no rights in them are granted by
+   this license.
 
-4. No warranty. The Software is provided "as is", without warranty of any kind, express
+7. No warranty. The Software is provided "as is", without warranty of any kind, express
    or implied. ShisaGames is not liable for any claim, damages or other liability
    arising from the use of the Software.
 
-5. Termination. Permission to use the Software ends automatically if these terms are
-   breached, or when ShisaGames withdraws it. On termination, all copies must be deleted.
+8. Termination. Your permission ends automatically if you breach these terms.
 
-For permissions, contact ShisaGames through https://shisagames.online.
+For other uses, contact ShisaGames through https://shisagames.online.

@@ -3,7 +3,7 @@
   "owner": {
     "name": "ShisaGames"
   },
-  "description": "ShisaGames' internal Claude Code plugins for mobile game development.",
+  "description": "Claude Code plugins by ShisaGames for mobile game development.",
   "plugins": [
     {
       "name": "mobile-game-studio",
