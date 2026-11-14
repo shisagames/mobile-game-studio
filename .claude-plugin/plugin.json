@@ -1,0 +1,12 @@
+{
+  "name": "mobile-game-studio",
+  "displayName": "Mobile Game Studio",
+  "version": "1.0.0",
+  "description": "Unity mobile game development (iOS + Android) from idea to store and live ops: idea evaluation against hit games, GDD, economy and retention design, asset pipeline, monetization, privacy, ASO, builds, store review and soft launch.",
+  "author": {
+    "name": "ShisaGames"
+  },
+  "homepage": "https://shisagames.online",
+  "license": "LicenseRef-ShisaGames-Proprietary",
+  "keywords": ["unity", "mobile-games", "game-design", "monetization", "aso", "ios", "android", "live-ops"]
+}

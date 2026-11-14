@@ -1,12 +1,13 @@
-# Mobile Game Studio: Claude Code Skill
+# Mobile Game Studio: Claude Code Plugin
 
-A Claude Code skill that guides a Unity mobile game (iOS and Android) from **the idea to the store and live ops**. It packs the process from *Lemonade Rush: Bottle Sort*, which ShisaGames took from an empty project to the App Store and Google Play in 22 days, into a form any project can reuse.
+**A Claude Code plugin by ShisaGames.** It guides a Unity mobile game (iOS and Android) from **the idea to the store and live ops**. It packs the process from *Lemonade Rush: Bottle Sort*, which ShisaGames took from an empty project to the App Store and Google Play in 22 days, into a form any project can reuse.
 
-> **Status:** private, first version (November 2026). The guide and notes are in Turkish, the skill description is in English.
+> **Status:** v1.0.0, private (November 2026). The guide and notes are in Turkish, the plugin and skill descriptions are in English.
+> **Licence:** ShisaGames Proprietary. Internal use only; see [LICENSE](LICENSE).
 
 ## What it does
 
-The skill works out which stage a project is in and loads only the guide section that stage needs:
+The plugin includes the `mobile-game-studio` skill. The skill works out which stage a project is in and loads only the guide section that stage needs:
 
 | Stage | What the skill does |
 |---|---|
@@ -21,33 +22,46 @@ The skill works out which stage a project is in and loads only the guide section
 
 It also includes a **pitfalls table** (25 problems we hit, with cause and fix) and **checklists** for before a build, after an upload and on launch day.
 
-## Files
+## Repository layout
 
 ```
 mobile-game-studio/
-├── SKILL.md                         # Main file: working rules, stage → reference map, idea evaluation and GDD flows
-└── references/
-    ├── playbook.md                  # 17-phase development guide, checklists, pitfalls, tool layers
-    ├── economy-template.md          # Lemonade Rush's real economy and mechanics values
-    ├── asset-pipeline.md            # Art direction, code drawing pipeline, plugins and libraries
-    └── competitor-analysis.md       # Analysis of Magic Sort, Block Out, Gossip Harbor and Smash Fest + idea checklist
+├── .claude-plugin/
+│   ├── plugin.json                  # Plugin manifest (name, version, author: ShisaGames)
+│   └── marketplace.json             # "shisagames" marketplace, so the plugin installs with /plugin
+├── skills/
+│   └── mobile-game-studio/
+│       ├── SKILL.md                 # Working rules, stage → reference map, idea evaluation and GDD flows
+│       └── references/
+│           ├── playbook.md          # 17-phase development guide, checklists, pitfalls, tool layers
+│           ├── economy-template.md  # Lemonade Rush's real economy and mechanics values
+│           ├── asset-pipeline.md    # Art direction, code drawing pipeline, plugins and libraries
+│           └── competitor-analysis.md  # Magic Sort, Block Out, Gossip Harbor, Smash Fest + idea checklist
+├── LICENSE                          # ShisaGames Proprietary License
+└── README.md
 ```
 
 ## Installation
 
-Clone it into the global skills folder of whichever machine will use it:
+The repository is private. The installing machine must be signed in with a GitHub account that has access (`gh auth login`). Get the repository address from the ShisaGames team and write it in `<owner>/mobile-game-studio` form.
 
-```bash
-git clone https://github.com/uygurberkay/mobile-game-studio.git ~/.claude/skills/mobile-game-studio
+**As a plugin (recommended):** in Claude Code:
+
+```
+/plugin marketplace add <owner>/mobile-game-studio
+/plugin install mobile-game-studio@shisagames
 ```
 
-The skill loads on its own in a new Claude Code session. To use it in a single project only, clone it into that project's `.claude/skills/mobile-game-studio` folder instead.
+To update: `/plugin marketplace update shisagames`.
 
-To update:
+**From a local copy (for development):** after cloning the repository:
 
-```bash
-git -C ~/.claude/skills/mobile-game-studio pull
 ```
+/plugin marketplace add /path/to/mobile-game-studio
+/plugin install mobile-game-studio@shisagames
+```
+
+**As a skill only:** copy or link `skills/mobile-game-studio` into `~/.claude/skills/`. If you also install the plugin, don't add the skill a second time; the same skill would load twice.
 
 ## Usage
 
@@ -59,7 +73,7 @@ Claude Code picks the skill on its own from what you write. Example prompts:
 - "Mağazaya çıkış için neler kaldı?"
 - "Sırada ne var?"
 
-You can also call it directly by name: `/mobile-game-studio`.
+As a plugin, call it directly by name: `/mobile-game-studio:mobile-game-studio`. Installed as a skill only, it's `/mobile-game-studio`.
 
 ## Recommended tools
 
@@ -72,17 +86,20 @@ You can also call it directly by name: `/mobile-game-studio`.
 | Post-launch | Firebase (Analytics + Crashlytics) or Unity Gaming Services |
 | Other | security-audit, deep-research, skill-creator |
 
-Details: `references/playbook.md` §8 and `references/asset-pipeline.md` §4.
+Details: `skills/mobile-game-studio/references/playbook.md` §8 and `asset-pipeline.md` §4.
 
 ## Contributing
 
 When a new project teaches a general lesson:
-1. Add it to the pitfalls table in `references/playbook.md` §5 (symptom → cause → fix).
+1. Add it to the pitfalls table in `playbook.md` §5 (symptom → cause → fix).
 2. If an economy value changed with data, update `economy-template.md` and note where the data came from.
-3. Use short commit messages that describe what changed.
+3. Raise `version` in `.claude-plugin/plugin.json` (patch for content fixes, minor for new sections).
+4. Use short commit messages that describe what changed.
 
 **Never put these in this repo:** API keys, tokens, keystore details, team IDs, personal addresses or phone numbers. Those live in each project's git-ignored `.env`.
 
 ## Licence
 
-Private, ShisaGames internal use. The analysis in `competitor-analysis.md` relies on public store pages and industry reports. Names and figures belong to their owners and are for reference only.
+© 2026 ShisaGames. All rights reserved. This plugin is licensed under the **ShisaGames Proprietary License**: it is for ShisaGames' and its authorized people's own game development work only. Copying, distributing or sharing it with third parties requires written permission. Full text: [LICENSE](LICENSE).
+
+The analysis in `competitor-analysis.md` relies on public store pages and industry reports. Names, trademarks and figures belong to their owners and are for reference only.

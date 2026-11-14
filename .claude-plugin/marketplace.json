@@ -1,0 +1,14 @@
+{
+  "name": "shisagames",
+  "owner": {
+    "name": "ShisaGames"
+  },
+  "description": "ShisaGames' internal Claude Code plugins for mobile game development.",
+  "plugins": [
+    {
+      "name": "mobile-game-studio",
+      "source": "./",
+      "description": "Unity mobile game development from idea to store and live ops."
+    }
+  ]
+}
